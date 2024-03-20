@@ -26,7 +26,7 @@ namespace MathTaskClassLibrary
             {
                 return 1;
             }
-            if (x <= 0 && y <= 0 && Math.Pow(x + R, 2) + Math.Pow(y + R, 2) <= Math.Pow(R, 2))
+            if (x <= 0 && y <= 0 && Math.Pow(x + R, 2) + Math.Pow(y + R, 2) >= Math.Pow(R, 2) && Math.Abs(x) <= R && Math.Abs(y) <= R)
             {
                 return 2;
             }
